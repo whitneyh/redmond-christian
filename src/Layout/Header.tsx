@@ -20,7 +20,7 @@ export const Header = () => {
     return (
         <>
             <span className="helper"/>
-            <img src="RCC_Logo.webp"/>
+            <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
             <div className="title">Redmond Christian Church</div>
         </>
     )

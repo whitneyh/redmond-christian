@@ -33,3 +33,11 @@
 .menu-container ul li:hover {
     background-color: lightblue;
 }
+
+.menu-container ul li:has(> a.active) {
+    border-bottom: crimson 3px solid;
+}
+
+a {
+    text-decoration: none;
+}

@@ -14,8 +14,17 @@
  * limitations under the License.
  */
 
-export const Security = () => {
-    return (
-        <span>Security</span>
-    )
+table, tr, td {
+    margin: 0 auto;
+    border: black 1px solid;
+    border-collapse: collapse;
 }
+
+td {
+    padding: 10px;
+}
+
+td:first-child {
+    width: 33%;
+}
+
