@@ -26,8 +26,8 @@ export const Navigation = () => {
             <div className="menu-container">
                 <div className="section">Security</div>
                 <ul>
-                    <li><NavLink to="/security">Team Guide</NavLink></li>
-                    <li><NavLink to="/hospitality">Sunday Checklist</NavLink></li>
+                    <li><NavLink to="/security/guide">Team Guide</NavLink></li>
+                    <li><NavLink to="/security/checklist">Sunday Checklist</NavLink></li>
                 </ul>
             </div>
         </>

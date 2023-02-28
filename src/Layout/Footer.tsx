@@ -18,6 +18,6 @@ import './Footer.css';
 
 export const Footer = () => {
     return (
-        <div className="copyright">Copyright (c) 2023 - Whitney Hunter</div>
+        <div className="copyright">Copyright (c) 2023 - Redmond Christian Church</div>
     )
 }
