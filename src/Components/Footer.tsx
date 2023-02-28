@@ -14,8 +14,13 @@
  * limitations under the License.
  */
 
-export const Footer = () => {
+import './Footer.css';
+
+export const Footer = (props: { className: string }) => {
+    const {className} = props
     return (
-        <div className="footer">Footer</div>
+        <footer className={className}>
+            <div className="copyright">Copyright (c) 2023 - Whitney Hunter</div>
+        </footer>
     )
 }

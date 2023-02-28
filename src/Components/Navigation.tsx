@@ -14,8 +14,22 @@
  * limitations under the License.
  */
 
-export const Navigation = () => {
+import './Navigation.css';
+
+export const Navigation = (props: { className: string }) => {
+    const {className} = props
     return (
-        <div className="navigation">Navigation</div>
+        <nav className={className}>
+            <div className="menu-container">
+                <div className="section">Hospitality</div>
+            </div>
+            <div className="menu-container">
+                <div className="section">Security</div>
+                <ul>
+                    <li>Team Guide</li>
+                    <li>Sunday Checklist</li>
+                </ul>
+            </div>
+        </nav>
     )
 }

@@ -23,11 +23,11 @@ import {Footer} from "./Components/Footer";
 
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            <Navigation/>
+        <div className="app-container">
+            <Header className="header"/>
+            <Navigation className="navigation"/>
             <Main/>
-            <Footer/>
+            <Footer className="footer"/>
         </div>
     );
 }

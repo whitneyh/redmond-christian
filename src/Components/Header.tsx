@@ -14,8 +14,15 @@
  * limitations under the License.
  */
 
-export const Header = () => {
+import './Header.css';
+
+export const Header = (props: { className: string }) => {
+    const {className} = props
     return (
-        <div className="header">Header</div>
+        <header className={className}>
+            <span className="helper"/>
+            <img src="RCC_Logo.webp"/>
+            <div className="title">Redmond Christian Church</div>
+        </header>
     )
 }

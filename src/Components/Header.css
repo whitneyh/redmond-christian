@@ -14,36 +14,22 @@
  * limitations under the License.
  */
 
-.header {
-    background-color: lightgray;
-    grid-area: header
+img {
+    height: 125px;
+    vertical-align: middle;
+    margin-left: 50px;
 }
 
-.navigation {
-    background-color: lightcyan;
-    grid-area: nav;
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
-Main {
-    grid-area: main;
+.title {
+    float: right;
+    margin: 30px 50px;
+    font-size: 70px;
+    color: crimson;
 }
 
-.footer {
-    background-color: lightgray;
-    grid-area: footer;
-}
-
-.app-container {
-    display: grid;
-    grid-template-columns: [left-nav] 200px [main-container] 1fr;
-    grid-template-rows: [header] 150px [main] 100% [footer] 75px;
-    grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
-    font-family: Montserrat;
-}
-
-.app-container * {
-
-}
