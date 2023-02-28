@@ -16,18 +16,26 @@
 
 import React from 'react';
 import './App.css';
-import {Header} from "./Components/Header";
-import {Navigation} from "./Components/Navigation";
-import {Main} from "./Components/Main";
-import {Footer} from "./Components/Footer";
+import {Header} from "./Layout/Header";
+import {Navigation} from "./Layout/Navigation";
+import {Main} from "./Layout/Main";
+import {Footer} from "./Layout/Footer";
 
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            <Navigation/>
-            <Main/>
-            <Footer/>
+        <div className="app-container">
+            <header>
+                <Header/>
+            </header>
+            <nav>
+                <Navigation/>
+            </nav>
+            <div className="main">
+                <Main/>
+            </div>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     );
 }

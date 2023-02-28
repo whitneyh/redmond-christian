@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-export const Header = () => {
-    return (
-        <div className="header">Header</div>
-    )
+.copyright {
+    text-align: center;
+    margin-top: 25px;
 }

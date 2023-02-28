@@ -14,8 +14,15 @@
  * limitations under the License.
  */
 
-export const Footer = () => {
+import './Main.css';
+import {NavRouter} from "./NavRouter";
+
+export const Main = () => {
     return (
-        <div className="footer">Footer</div>
+        <>
+            <div className="main-container">
+                <NavRouter/>
+            </div>
+        </>
     )
 }

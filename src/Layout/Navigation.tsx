@@ -14,8 +14,22 @@
  * limitations under the License.
  */
 
-export const Main = () => {
+import './Navigation.css';
+import {NavLink} from "react-router-dom";
+
+export const Navigation = () => {
     return (
-        <div className="main">Main</div>
+        <>
+            <div className="menu-container">
+                <div className="section">Hospitality</div>
+            </div>
+            <div className="menu-container">
+                <div className="section">Security</div>
+                <ul>
+                    <li><NavLink to="/security">Team Guide</NavLink></li>
+                    <li><NavLink to="/hospitality">Sunday Checklist</NavLink></li>
+                </ul>
+            </div>
+        </>
     )
 }
