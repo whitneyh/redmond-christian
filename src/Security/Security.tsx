@@ -14,22 +14,27 @@
  * limitations under the License.
  */
 
-import './Navigation.css';
+import {Route, Routes} from "react-router-dom";
 
-export const Navigation = (props: { className: string }) => {
-    const {className} = props
+export const Security = () => {
     return (
-        <nav className={className}>
-            <div className="menu-container">
-                <div className="section">Hospitality</div>
-            </div>
-            <div className="menu-container">
-                <div className="section">Security</div>
-                <ul>
-                    <li>Team Guide</li>
-                    <li>Sunday Checklist</li>
-                </ul>
-            </div>
-        </nav>
+        <>
+            <Routes>
+                <Route path="/" element={<Test/>}/>
+                <Route path="/security" element={<Test2/>}/>
+            </Routes>
+        </>
+    )
+}
+
+const Test = () => {
+    return (
+        <span>Hello!</span>
+    )
+}
+
+const Test2 = () => {
+    return (
+        <span>Right on</span>
     )
 }

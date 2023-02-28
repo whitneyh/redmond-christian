@@ -14,22 +14,19 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import './App.css';
-import {Header} from "./Layout/Header";
-import {Navigation} from "./Layout/Navigation";
-import {Main} from "./Layout/Main";
-import {Footer} from "./Layout/Footer";
+import './Main.css';
+import {BrowserRouter} from "react-router-dom";
+import {Security} from "../Security/Security";
 
-function App() {
+export const Main = (props: { className: string }) => {
+    const {className} = props
     return (
-        <div className="app-container">
-            <Header className="header"/>
-            <Navigation className="navigation"/>
-            <Main className="main"/>
-            <Footer className="footer"/>
+        <div className={className}>
+            <div className="main-container">
+                <BrowserRouter>
+                    <Security/>
+                </BrowserRouter>
+            </div>
         </div>
-    );
+    )
 }
-
-export default App;
