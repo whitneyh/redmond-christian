@@ -14,16 +14,18 @@
  * limitations under the License.
  */
 
-import './Main.css';
-import {Router} from "../Router";
+import {Route, Routes} from "react-router-dom";
+import {Hospitality} from "./Hospitality/Hospitality";
+import {Security} from "./Security/Security";
 
-export const Main = (props: { className: string }) => {
-    const {className} = props
+export const Router = () => {
     return (
-        <div className={className}>
-            <div className="main-container">
-                <Router/>
-            </div>
-        </div>
+        <>
+            <Routes>
+                <Route path="/hospitality" element={<Hospitality/>}/>
+                <Route path="/security" element={<Security/>}/>
+            </Routes>
+        </>
     )
 }
+

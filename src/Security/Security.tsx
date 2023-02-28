@@ -14,27 +14,8 @@
  * limitations under the License.
  */
 
-import {Route, Routes} from "react-router-dom";
-
 export const Security = () => {
     return (
-        <>
-            <Routes>
-                <Route path="/" element={<Test/>}/>
-                <Route path="/security" element={<Test2/>}/>
-            </Routes>
-        </>
-    )
-}
-
-const Test = () => {
-    return (
-        <span>Hello!</span>
-    )
-}
-
-const Test2 = () => {
-    return (
-        <span>Right on</span>
+        <span>Security</span>
     )
 }

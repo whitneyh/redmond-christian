@@ -14,16 +14,8 @@
  * limitations under the License.
  */
 
-import './Main.css';
-import {Router} from "../Router";
-
-export const Main = (props: { className: string }) => {
-    const {className} = props
+export const Hospitality = () => {
     return (
-        <div className={className}>
-            <div className="main-container">
-                <Router/>
-            </div>
-        </div>
+        <span>Hospitality!</span>
     )
 }
