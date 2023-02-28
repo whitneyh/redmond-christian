@@ -17,11 +17,13 @@
 import {Route, Routes} from "react-router-dom";
 import {TeamGuide} from "../Security/TeamGuide";
 import {SundayChecklist} from "../Security/SundayChecklist";
+import {Welcome} from "../Landing/Welcome";
 
 export const NavRouter = () => {
     return (
         <>
             <Routes>
+                <Route path="/" element={<Welcome/>}/>
                 <Route path="/security/checklist" element={<SundayChecklist/>}/>
                 <Route path="/security/guide" element={<TeamGuide/>}/>
             </Routes>

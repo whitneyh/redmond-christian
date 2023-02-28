@@ -15,12 +15,15 @@
  */
 
 import './Header.css';
+import {Link} from "react-router-dom";
 
 export const Header = () => {
     return (
         <>
             <span className="helper"/>
-            <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
+            <Link to="/">
+                <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
+            </Link>
             <div className="title">Redmond Christian Church</div>
         </>
     )
