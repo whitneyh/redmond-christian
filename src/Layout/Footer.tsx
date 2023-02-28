@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-export const Navigation = () => {
+import './Footer.css';
+
+export const Footer = () => {
     return (
-        <div className="navigation">Navigation</div>
+        <div className="copyright">Copyright (c) 2023 - Whitney Hunter</div>
     )
 }
