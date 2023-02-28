@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-.header {
+header {
     background-color: lightgray;
     grid-area: header
 }
 
-.navigation {
+nav {
     background-color: lightcyan;
     grid-area: nav;
 }
 
-Main {
+.main {
     grid-area: main;
 }
 
-.footer {
+footer {
     background-color: lightgray;
     grid-area: footer;
 }

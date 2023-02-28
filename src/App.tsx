@@ -24,16 +24,16 @@ import {Footer} from "./Layout/Footer";
 function App() {
     return (
         <div className="app-container">
-            <header className="header">
+            <header>
                 <Header/>
             </header>
-            <nav className="navigation">
+            <nav>
                 <Navigation/>
             </nav>
             <div className="main">
                 <Main/>
             </div>
-            <footer className="footer">
+            <footer>
                 <Footer/>
             </footer>
         </div>
