@@ -14,39 +14,13 @@
  * limitations under the License.
  */
 
-.menu-container {
-    font-weight: 700;
-}
-
-.menu-container ul {
-    font-weight: 400;
-    list-style: outside none none;
-    padding-inline-start: 0;
-    margin-block: 0;
-}
-
-.menu-container ul li {
-    padding: 10px 0;
-}
-
-.menu-container li:hover {
-    background-color: lightblue;
-}
-
-.menu-container a.active li {
-    background-color: lightblue;
-    border-bottom: crimson 3px solid;
-}
-
-.menu-container a li span {
-    margin-left: 10px;
-}
-
-.section {
-    margin-left: 10px;
-    margin-top: 20px;
-}
-
-a {
-    text-decoration: none;
+export const Welcome = () => {
+    return (
+        <>
+            <h1>Hospitality and Security Team Info</h1>
+            <p>
+                Please select an option from the menu on the left
+            </p>
+        </>
+    )
 }
