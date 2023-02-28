@@ -14,22 +14,6 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import './App.css';
-import {Header} from "./Components/Header";
-import {Navigation} from "./Components/Navigation";
-import {Main} from "./Components/Main";
-import {Footer} from "./Components/Footer";
-
-function App() {
-    return (
-        <div className="app-container">
-            <Header className="header"/>
-            <Navigation className="navigation"/>
-            <Main className="main"/>
-            <Footer className="footer"/>
-        </div>
-    );
+.main-container {
+    margin: 25px;
 }
-
-export default App;

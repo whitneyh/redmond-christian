@@ -36,7 +36,7 @@ Main {
 .app-container {
     display: grid;
     grid-template-columns: [left-nav] 200px [main-container] 1fr;
-    grid-template-rows: [header] 150px [main] 100% [footer] 75px;
+    grid-template-rows: [header] 150px [main] auto [footer] 75px;
     grid-template-areas:
         "header header"
         "nav main"

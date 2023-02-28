@@ -14,8 +14,43 @@
  * limitations under the License.
  */
 
-export const Main = () => {
+import './Main.css';
+
+export const Main = (props: { className: string }) => {
+    const {className} = props
     return (
-        <div className="main">Main</div>
+        <div className={className}>
+            <div className="main-container">
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+                <div>here</div>
+            </div>
+        </div>
     )
 }
