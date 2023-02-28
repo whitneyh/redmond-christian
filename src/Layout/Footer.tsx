@@ -16,11 +16,8 @@
 
 import './Footer.css';
 
-export const Footer = (props: { className: string }) => {
-    const {className} = props
+export const Footer = () => {
     return (
-        <footer className={className}>
-            <div className="copyright">Copyright (c) 2023 - Whitney Hunter</div>
-        </footer>
+        <div className="copyright">Copyright (c) 2023 - Whitney Hunter</div>
     )
 }

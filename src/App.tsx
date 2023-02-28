@@ -24,10 +24,18 @@ import {Footer} from "./Layout/Footer";
 function App() {
     return (
         <div className="app-container">
-            <Header className="header"/>
-            <Navigation className="navigation"/>
-            <Main className="main"/>
-            <Footer className="footer"/>
+            <header className="header">
+                <Header/>
+            </header>
+            <nav className="navigation">
+                <Navigation/>
+            </nav>
+            <div className="main">
+                <Main/>
+            </div>
+            <footer className="footer">
+                <Footer/>
+            </footer>
         </div>
     );
 }

@@ -17,10 +17,9 @@
 import './Navigation.css';
 import {NavLink} from "react-router-dom";
 
-export const Navigation = (props: { className: string }) => {
-    const {className} = props
+export const Navigation = () => {
     return (
-        <nav className={className}>
+        <>
             <div className="menu-container">
                 <div className="section">Hospitality</div>
             </div>
@@ -31,6 +30,6 @@ export const Navigation = (props: { className: string }) => {
                     <li><NavLink to="/hospitality">Sunday Checklist</NavLink></li>
                 </ul>
             </div>
-        </nav>
+        </>
     )
 }

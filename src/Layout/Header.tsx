@@ -16,13 +16,12 @@
 
 import './Header.css';
 
-export const Header = (props: { className: string }) => {
-    const {className} = props
+export const Header = () => {
     return (
-        <header className={className}>
+        <>
             <span className="helper"/>
             <img src="RCC_Logo.webp"/>
             <div className="title">Redmond Christian Church</div>
-        </header>
+        </>
     )
 }

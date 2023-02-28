@@ -15,10 +15,10 @@
  */
 
 import {Route, Routes} from "react-router-dom";
-import {Hospitality} from "./Hospitality/Hospitality";
-import {Security} from "./Security/Security";
+import {Hospitality} from "../Hospitality/Hospitality";
+import {Security} from "../Security/Security";
 
-export const Router = () => {
+export const NavRouter = () => {
     return (
         <>
             <Routes>

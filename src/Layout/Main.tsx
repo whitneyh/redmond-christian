@@ -15,15 +15,14 @@
  */
 
 import './Main.css';
-import {Router} from "../Router";
+import {NavRouter} from "./NavRouter";
 
-export const Main = (props: { className: string }) => {
-    const {className} = props
+export const Main = () => {
     return (
-        <div className={className}>
+        <>
             <div className="main-container">
-                <Router/>
+                <NavRouter/>
             </div>
-        </div>
+        </>
     )
 }
