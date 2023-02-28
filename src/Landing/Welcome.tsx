@@ -14,36 +14,13 @@
  * limitations under the License.
  */
 
-header {
-    background-color: lightgray;
-    grid-area: header
-}
-
-nav {
-    background-color: lightcyan;
-    grid-area: nav;
-}
-
-.main {
-    grid-area: main;
-}
-
-footer {
-    background-color: lightgray;
-    grid-area: footer;
-}
-
-.app-container {
-    display: grid;
-    grid-template-columns: [left-nav] 200px [main-container] 1fr;
-    grid-template-rows: [header] 150px [main] auto [footer] 75px;
-    grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
-    font-family: Montserrat;
-}
-
-.app-container * {
-
+export const Welcome = () => {
+    return (
+        <>
+            <h1>Hospitality and Security Team Info</h1>
+            <p>
+                Please select an option from the menu on the left
+            </p>
+        </>
+    )
 }

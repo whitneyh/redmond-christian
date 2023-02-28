@@ -14,36 +14,17 @@
  * limitations under the License.
  */
 
-header {
-    background-color: lightgray;
-    grid-area: header
-}
+import './Header.css';
+import {Link} from "react-router-dom";
 
-nav {
-    background-color: lightcyan;
-    grid-area: nav;
-}
-
-.main {
-    grid-area: main;
-}
-
-footer {
-    background-color: lightgray;
-    grid-area: footer;
-}
-
-.app-container {
-    display: grid;
-    grid-template-columns: [left-nav] 200px [main-container] 1fr;
-    grid-template-rows: [header] 150px [main] auto [footer] 75px;
-    grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
-    font-family: Montserrat;
-}
-
-.app-container * {
-
+export const Header = () => {
+    return (
+        <>
+            <span className="helper"/>
+            <Link to="/">
+                <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
+            </Link>
+            <div className="title">Redmond Christian Church</div>
+        </>
+    )
 }

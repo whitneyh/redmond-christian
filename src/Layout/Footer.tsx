@@ -14,36 +14,10 @@
  * limitations under the License.
  */
 
-header {
-    background-color: lightgray;
-    grid-area: header
-}
+import './Footer.css';
 
-nav {
-    background-color: lightcyan;
-    grid-area: nav;
-}
-
-.main {
-    grid-area: main;
-}
-
-footer {
-    background-color: lightgray;
-    grid-area: footer;
-}
-
-.app-container {
-    display: grid;
-    grid-template-columns: [left-nav] 200px [main-container] 1fr;
-    grid-template-rows: [header] 150px [main] auto [footer] 75px;
-    grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
-    font-family: Montserrat;
-}
-
-.app-container * {
-
+export const Footer = () => {
+    return (
+        <div className="copyright">Copyright (c) 2023 - Redmond Christian Church</div>
+    )
 }

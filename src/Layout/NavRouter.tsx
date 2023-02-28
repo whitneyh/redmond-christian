@@ -14,36 +14,20 @@
  * limitations under the License.
  */
 
-header {
-    background-color: lightgray;
-    grid-area: header
+import {Route, Routes} from "react-router-dom";
+import {TeamGuide} from "../Security/TeamGuide";
+import {SundayChecklist} from "../Security/SundayChecklist";
+import {Welcome} from "../Landing/Welcome";
+
+export const NavRouter = () => {
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<Welcome/>}/>
+                <Route path="/security/checklist" element={<SundayChecklist/>}/>
+                <Route path="/security/guide" element={<TeamGuide/>}/>
+            </Routes>
+        </>
+    )
 }
 
-nav {
-    background-color: lightcyan;
-    grid-area: nav;
-}
-
-.main {
-    grid-area: main;
-}
-
-footer {
-    background-color: lightgray;
-    grid-area: footer;
-}
-
-.app-container {
-    display: grid;
-    grid-template-columns: [left-nav] 200px [main-container] 1fr;
-    grid-template-rows: [header] 150px [main] auto [footer] 75px;
-    grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
-    font-family: Montserrat;
-}
-
-.app-container * {
-
-}

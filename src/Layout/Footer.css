@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-export const Navigation = () => {
-    return (
-        <div className="navigation">Navigation</div>
-    )
+.copyright {
+    text-align: center;
+    margin-top: 25px;
 }

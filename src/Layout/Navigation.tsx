@@ -14,30 +14,22 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import './App.css';
-import {Header} from "./Layout/Header";
-import {Navigation} from "./Layout/Navigation";
-import {Main} from "./Layout/Main";
-import {Footer} from "./Layout/Footer";
+import './Navigation.css';
+import {NavLink} from "react-router-dom";
 
-function App() {
+export const Navigation = () => {
     return (
-        <div className="app-container">
-            <header>
-                <Header/>
-            </header>
-            <nav>
-                <Navigation/>
-            </nav>
-            <div className="main">
-                <Main/>
+        <>
+            <div className="menu-container">
+                <div className="section">Hospitality</div>
             </div>
-            <footer>
-                <Footer/>
-            </footer>
-        </div>
-    );
+            <div className="menu-container">
+                <div className="section">Security</div>
+                <ul>
+                    <NavLink to="/security/guide"><li><span>Team Guide</span></li></NavLink>
+                    <NavLink to="/security/checklist"><li><span>Sunday Checklist</span></li></NavLink>
+                </ul>
+            </div>
+        </>
+    )
 }
-
-export default App;
