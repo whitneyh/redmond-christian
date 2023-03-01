@@ -15,9 +15,11 @@
  */
 
 import {Route, Routes} from "react-router-dom";
-import {TeamGuide} from "../Security/TeamGuide";
-import {SundayChecklist} from "../Security/SundayChecklist";
+import {TeamGuide} from "../Teams/Security/TeamGuide";
+import {SundayChecklist} from "../Teams/Security/SundayChecklist";
 import {Welcome} from "../Landing/Welcome";
+import {useEffect} from "react";
+import ReactGA from "react-ga";
 
 export const NavRouter = () => {
     return (

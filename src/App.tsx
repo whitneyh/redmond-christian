@@ -14,14 +14,21 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import './App.css';
-import {Header} from "./Layout/Header";
-import {Navigation} from "./Layout/Navigation";
-import {Main} from "./Layout/Main";
-import {Footer} from "./Layout/Footer";
+import React, {useEffect} from 'react'
+import './App.css'
+import {Header} from "./Layout/Header"
+import {Navigation} from "./Layout/Navigation"
+import {Main} from "./Layout/Main"
+import {Footer} from "./Layout/Footer"
+import ReactGA from 'react-ga'
 
-function App() {
+const TRACKING_ID = 'G-0266J5MDC5'
+ReactGA.initialize(TRACKING_ID)
+
+const App = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
+    }, [])
     return (
         <div className="app-container">
             <header>
