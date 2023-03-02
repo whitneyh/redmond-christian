@@ -24,27 +24,27 @@ export const TeamGuide = () => {
             <div id="toc_container">
                 <h1>Contents</h1>
                 <ul className="toc_list">
-                    <li><a href="#introduction">1 Introduction</a></li>
-                    <li><a href="#sundays">2 Sundays</a></li>
-                    <li><a href="#safety">3 Safety</a></li>
+                    <li><a href="src/Security#introduction">1 Introduction</a></li>
+                    <li><a href="src/Security#sundays">2 Sundays</a></li>
+                    <li><a href="src/Security#safety">3 Safety</a></li>
                     <ul>
-                        <li><a href="#people-safety">3.1 People</a></li>
-                        <li><a href="#emergencies">3.2 Emergencies</a></li>
+                        <li><a href="src/Security#people-safety">3.1 People</a></li>
+                        <li><a href="src/Security#emergencies">3.2 Emergencies</a></li>
                     </ul>
-                    <li><a href="#security">4 Security</a></li>
+                    <li><a href="src/Security#security">4 Security</a></li>
                     <ul>
-                        <li><a href="#people-security">4.1 People</a></li>
-                        <li><a href="#environment">4.2 Environment</a></li>
+                        <li><a href="src/Security#people-security">4.1 People</a></li>
+                        <li><a href="src/Security#environment">4.2 Environment</a></li>
                     </ul>
-                    <li><a href="#911">5 Calling 911</a></li>
+                    <li><a href="src/Security#911">5 Calling 911</a></li>
                     <ul>
-                        <li><a href="#911-who">5.1 Who Should Call?</a></li>
-                        <li><a href="#911-after">5.2 After 911 is Called</a></li>
+                        <li><a href="src/Security#911-who">5.1 Who Should Call?</a></li>
+                        <li><a href="src/Security#911-after">5.2 After 911 is Called</a></li>
                     </ul>
-                    <li><a href="#training">6 Training</a></li>
+                    <li><a href="src/Security#training">6 Training</a></li>
                     <ul>
-                        <li><a href="#training-first-aid">6.1 First Aid/CPR</a></li>
-                        <li><a href="#training-security">6.2 Security</a></li>
+                        <li><a href="src/Security#training-first-aid">6.1 First Aid/CPR</a></li>
+                        <li><a href="src/Security#training-security">6.2 Security</a></li>
                     </ul>
                 </ul>
             </div>
