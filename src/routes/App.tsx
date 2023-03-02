@@ -68,15 +68,20 @@ function App() {
                 <Toolbar>
                     <IconButton color='inherit'
                                 edge='start'
-                                sx={{display: {sm: 'block', md: 'none'}}}
+                                sx={{display: {xs: 'block', sm: 'block', md: 'none', lg: 'none'}}}
                                 onClick={() => setMobileOpen(!mobileOpen)}>
                         <MenuIcon/>
                     </IconButton>
                     <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
-                    <Typography variant='h3' sx={{ml: 2, fontFamily: 'Montserrat', color: 'white'}}>Redmond Christian Church</Typography>
+                    <Typography variant='h3' sx={{display: {xs: 'none', sm: 'none', md: 'block', lg: 'block'}, ml: 2, fontFamily: 'Montserrat', color: 'white'}}>
+                        Redmond Christian Church
+                    </Typography>
+                    <Typography variant='body1' sx={{display: {xs: 'block', sm: 'block', md: 'none', lg: 'none'}, ml: 2, fontFamily: 'Montserrat', color: 'white'}}>
+                        Redmond Christian Church
+                    </Typography>
                 </Toolbar>
             </AppBar>
-            <Box component='nav' sx={{display: {sm: 'none', md: 'block'}}}>
+            <Box component='nav' sx={{display: {xs: 'none', sm: 'none', md: 'block', lg: 'block'}}}>
                 <Drawer variant='permanent'
                         sx={{
                             width: drawerWidth,
