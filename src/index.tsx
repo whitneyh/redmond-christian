@@ -19,16 +19,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {TeamGuide} from "./Security/TeamGuide";
+import {SundayChecklist} from "./Security/SundayChecklist";
 
-const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
-);
-root.render(
+const router = createBrowserRouter([
+    {
+        path: '/', element: <App/>,
+        children: [
+            {path: '/security/guide', element: <TeamGuide/>},
+            {path: '/security/checklist', element: <SundayChecklist/>}
+        ]
+    }
+])
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
+        <RouterProvider router={router}/>
     </React.StrictMode>
 );
 

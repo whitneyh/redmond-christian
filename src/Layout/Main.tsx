@@ -15,13 +15,13 @@
  */
 
 import './Main.css';
-import {NavRouter} from "./NavRouter";
+import {Outlet} from "react-router-dom";
 
 export const Main = () => {
     return (
         <>
             <div className="main-container">
-                <NavRouter/>
+                <Outlet/>
             </div>
         </>
     )
