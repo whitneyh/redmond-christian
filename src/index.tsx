@@ -17,18 +17,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {TeamGuide} from "./routes/TeamGuide";
+import {SundayChecklist} from "./routes/SundayChecklist";
+import {Welcome} from "./routes/Welcome";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import {CssBaseline} from "@mui/material";
 
-const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
-);
-root.render(
+const router = createBrowserRouter([
+    {
+        path: '/', element: <App/>,
+        children: [
+            {path: '/', element: <Welcome/>},
+            {path: '/security/guide', element: <TeamGuide/>},
+            {path: '/security/checklist', element: <SundayChecklist/>}
+        ]
+    }
+])
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
+        <CssBaseline enableColorScheme/>
+        <RouterProvider router={router}/>
     </React.StrictMode>
 );
 
