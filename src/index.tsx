@@ -17,16 +17,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {TeamGuide} from "./Security/TeamGuide";
 import {SundayChecklist} from "./Security/SundayChecklist";
+import {Welcome} from "./Landing/Welcome";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const router = createBrowserRouter([
     {
         path: '/', element: <App/>,
         children: [
+            {path: '/', element: <Welcome/>},
             {path: '/security/guide', element: <TeamGuide/>},
             {path: '/security/checklist', element: <SundayChecklist/>}
         ]

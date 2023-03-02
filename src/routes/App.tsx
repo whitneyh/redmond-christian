@@ -16,10 +16,10 @@
 
 import React from 'react';
 import './App.css';
-import {Header} from "./Layout/Header";
-import {Navigation} from "./Layout/Navigation";
-import {Main} from "./Layout/Main";
-import {Footer} from "./Layout/Footer";
+import {Header} from "../Layout/Header";
+import {Navigation} from "../Layout/Navigation";
+import {Main} from "../Layout/Main";
+import {Footer} from "../Layout/Footer";
 
 function App() {
     return (
