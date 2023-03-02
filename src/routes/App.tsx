@@ -14,30 +14,102 @@
  * limitations under the License.
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Header} from "../Layout/Header";
-import {Navigation} from "../Layout/Navigation";
-import {Main} from "../Layout/Main";
-import {Footer} from "../Layout/Footer";
+import {
+    AppBar,
+    Box,
+    Divider,
+    Drawer,
+    IconButton,
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    Toolbar,
+    Typography
+} from "@mui/material";
+import {Badge, CheckBox} from "@mui/icons-material";
+import MenuIcon from '@mui/icons-material/Menu';
+import {NavLink, Outlet} from "react-router-dom";
 
 function App() {
+    const [mobileOpen, setMobileOpen] = useState(false)
+
+    const drawerWidth = 240
+    const drawer = (
+        <Box>
+            <Typography variant='h6' sx={{ml: 3, mt: 2}}>
+                Hospitality
+            </Typography>
+            <Divider/>
+            <Typography variant='h6' sx={{ml: 3, mt: 2}}>
+                Security
+            </Typography>
+            <List>
+                {[
+                    {name: 'Team Guide', icon: <Badge/>, route: '/security/guide'},
+                    {name: 'Sunday Checklist', icon: <CheckBox/>, route: '/security/checklist'},
+                ].map((item, index) => (
+                    <NavLink to={item.route} onClick={() => setMobileOpen(false)}>
+                        <ListItem key={index}>
+                            <ListItemIcon>{item.icon}</ListItemIcon>
+                            <ListItemText primary={item.name}/>
+                        </ListItem>
+                    </NavLink>
+                ))}
+            </List>
+        </Box>
+    )
+
     return (
-        <div className="app-container">
-            <header>
-                <Header/>
-            </header>
-            <nav>
-                <Navigation/>
-            </nav>
-            <div className="main">
-                <Main/>
-            </div>
-            <footer>
-                <Footer/>
-            </footer>
-        </div>
-    );
+        <Box sx={{display: 'flex'}}>
+            <AppBar position='fixed' sx={{zIndex: (theme) => theme.zIndex.drawer + 1}}>
+                <Toolbar>
+                    <IconButton color='inherit'
+                                edge='start'
+                                sx={{display: {sm: 'block', md: 'none'}}}
+                                onClick={() => setMobileOpen(!mobileOpen)}>
+                        <MenuIcon/>
+                    </IconButton>
+                    <Typography variant='h3'>Redmond Christian Church</Typography>
+                </Toolbar>
+            </AppBar>
+            <Box component='nav' sx={{display: {sm: 'none', md: 'block'}}}>
+                <Drawer variant='permanent'
+                        sx={{
+                            width: drawerWidth,
+                            flexShrink: 0,
+                            '& .MuiDrawer-paper': {
+                                width: drawerWidth,
+                                boxSizing: 'border-box'
+                            }
+                        }}>
+                    <Toolbar/>
+                    {drawer}
+                </Drawer>
+            </Box>
+            <Box component='nav' sx={{display: {sm: 'block', md: 'none'}}}>
+                <Drawer variant='temporary'
+                        open={mobileOpen}
+                        onClose={() => setMobileOpen(false)}
+                        sx={{
+                            width: drawerWidth,
+                            flexShrink: 0,
+                            '& .MuiDrawer-paper': {
+                                width: drawerWidth,
+                                boxSizing: 'border-box'
+                            }
+                        }}>
+                    <Toolbar/>
+                    {drawer}
+                </Drawer>
+            </Box>
+            <Box sx={{mt: 10, ml: 3, mr: 3}}>
+                <Outlet/>
+            </Box>
+        </Box>
+    )
 }
 
 export default App;
