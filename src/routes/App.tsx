@@ -39,11 +39,11 @@ function App() {
     const drawerWidth = 240
     const drawer = (
         <Box>
-            <Typography variant='h6' sx={{ml: 3, mt: 2}}>
+            <Typography variant='h6' sx={{ml: 3, mt: 2, color: 'crimson'}}>
                 Hospitality
             </Typography>
             <Divider/>
-            <Typography variant='h6' sx={{ml: 3, mt: 2}}>
+            <Typography variant='h6' sx={{ml: 3, mt: 2, color: 'crimson'}}>
                 Security
             </Typography>
             <List>
@@ -72,7 +72,8 @@ function App() {
                                 onClick={() => setMobileOpen(!mobileOpen)}>
                         <MenuIcon/>
                     </IconButton>
-                    <Typography variant='h3'>Redmond Christian Church</Typography>
+                    <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
+                    <Typography variant='h3' sx={{ml: 2, fontFamily: 'Montserrat', color: 'white'}}>Redmond Christian Church</Typography>
                 </Toolbar>
             </AppBar>
             <Box component='nav' sx={{display: {sm: 'none', md: 'block'}}}>

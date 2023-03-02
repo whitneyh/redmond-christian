@@ -14,11 +14,19 @@
  * limitations under the License.
  */
 
-nav li:hover {
+li:hover {
     background-color: lightblue;
 }
 
-nav a.active li {
+a {
+    text-decoration: none;
+}
+
+a.active li {
     background-color: lightblue;
     border-bottom: crimson 3px solid;
+}
+
+img {
+    height: 50px;
 }
