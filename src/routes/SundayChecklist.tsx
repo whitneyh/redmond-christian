@@ -25,6 +25,7 @@ export const SundayChecklist = () => {
                 team member who is assigned for that day:
             </p>
             <table>
+                <tbody>
                 <tr>
                     <td>9:00am</td>
                     <td>Arrive.</td>
@@ -66,6 +67,7 @@ export const SundayChecklist = () => {
                     <td>12:00pm (When you leave)</td>
                     <td>If there are people still in the church, remind them to check that doors are closed firmly.</td>
                 </tr>
+                </tbody>
             </table>
         </>
     )

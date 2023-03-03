@@ -32,35 +32,11 @@ import {
 import {Badge, CheckBox} from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {NavLink, Outlet} from "react-router-dom";
+import {NavDrawer} from "../component/NavDrawer";
+import Nav from "../component/Nav";
 
 function App() {
     const [mobileOpen, setMobileOpen] = useState(false)
-
-    const drawerWidth = 240
-    const drawer = (
-        <Box>
-            <Typography variant='h6' sx={{ml: 3, mt: 2, color: 'crimson'}}>
-                Hospitality
-            </Typography>
-            <Divider/>
-            <Typography variant='h6' sx={{ml: 3, mt: 2, color: 'crimson'}}>
-                Security
-            </Typography>
-            <List>
-                {[
-                    {name: 'Team Guide', icon: <Badge/>, route: '/security/guide'},
-                    {name: 'Sunday Checklist', icon: <CheckBox/>, route: '/security/checklist'},
-                ].map((item, index) => (
-                    <NavLink to={item.route} onClick={() => setMobileOpen(false)}>
-                        <ListItem key={index}>
-                            <ListItemIcon>{item.icon}</ListItemIcon>
-                            <ListItemText primary={item.name}/>
-                        </ListItem>
-                    </NavLink>
-                ))}
-            </List>
-        </Box>
-    )
 
     return (
         <Box sx={{display: 'flex'}}>
@@ -81,36 +57,8 @@ function App() {
                     </Typography>
                 </Toolbar>
             </AppBar>
-            <Box component='nav' sx={{display: {xs: 'none', sm: 'none', md: 'block', lg: 'block'}}}>
-                <Drawer variant='permanent'
-                        sx={{
-                            width: drawerWidth,
-                            flexShrink: 0,
-                            '& .MuiDrawer-paper': {
-                                width: drawerWidth,
-                                boxSizing: 'border-box'
-                            }
-                        }}>
-                    <Toolbar/>
-                    {drawer}
-                </Drawer>
-            </Box>
-            <Box component='nav' sx={{display: {sm: 'block', md: 'none'}}}>
-                <Drawer variant='temporary'
-                        open={mobileOpen}
-                        onClose={() => setMobileOpen(false)}
-                        sx={{
-                            width: drawerWidth,
-                            flexShrink: 0,
-                            '& .MuiDrawer-paper': {
-                                width: drawerWidth,
-                                boxSizing: 'border-box'
-                            }
-                        }}>
-                    <Toolbar/>
-                    {drawer}
-                </Drawer>
-            </Box>
+            <NavDrawer drawer={<Nav setMobileOpen={setMobileOpen}/>} isMobile={false} mobileOpen={undefined}/>
+            <NavDrawer drawer={<Nav setMobileOpen={setMobileOpen}/>} isMobile={true} mobileOpen={mobileOpen}/>
             <Box sx={{mt: 10, ml: 3, mr: 3}}>
                 <Outlet/>
             </Box>
