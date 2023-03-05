@@ -16,22 +16,9 @@
 
 import React, {useState} from 'react';
 import './App.css';
-import {
-    AppBar,
-    Box,
-    Divider,
-    Drawer,
-    IconButton,
-    List,
-    ListItem,
-    ListItemIcon,
-    ListItemText,
-    Toolbar,
-    Typography
-} from "@mui/material";
-import {Badge, CheckBox} from "@mui/icons-material";
+import {AppBar, Box, IconButton, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import {NavLink, Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import {NavDrawer} from "../component/NavDrawer";
 import Nav from "../component/Nav";
 
@@ -49,10 +36,20 @@ function App() {
                         <MenuIcon/>
                     </IconButton>
                     <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
-                    <Typography variant='h3' sx={{display: {xs: 'none', sm: 'none', md: 'block', lg: 'block'}, ml: 2, fontFamily: 'Montserrat', color: 'white'}}>
+                    <Typography variant='h3' sx={{
+                        display: {xs: 'none', sm: 'none', md: 'block', lg: 'block'},
+                        ml: 2,
+                        fontFamily: 'Montserrat',
+                        color: 'white'
+                    }}>
                         Redmond Christian Church
                     </Typography>
-                    <Typography variant='body1' sx={{display: {xs: 'block', sm: 'block', md: 'none', lg: 'none'}, ml: 2, fontFamily: 'Montserrat', color: 'white'}}>
+                    <Typography variant='body1' sx={{
+                        display: {xs: 'block', sm: 'block', md: 'none', lg: 'none'},
+                        ml: 2,
+                        fontFamily: 'Montserrat',
+                        color: 'white'
+                    }}>
                         Redmond Christian Church
                     </Typography>
                 </Toolbar>

@@ -20,8 +20,8 @@ import './index.css';
 import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {TeamGuide} from "./routes/TeamGuide";
-import {SundayChecklist} from "./routes/SundayChecklist";
+import {SecurityGuide} from "./routes/SecurityGuide";
+import {SecurityChecklist} from "./routes/SecurityChecklist";
 import {Welcome} from "./routes/Welcome";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
         path: '/', element: <App/>,
         children: [
             {path: '/', element: <Welcome/>},
-            {path: '/security/guide', element: <TeamGuide/>},
-            {path: '/security/checklist', element: <SundayChecklist/>}
+            {path: '/security/guide', element: <SecurityGuide/>},
+            {path: '/security/checklist', element: <SecurityChecklist/>}
         ]
     }
 ])

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import './SundayChecklist.css';
+import './SecurityChecklist.css';
 
-export const SundayChecklist = () => {
+export const SecurityChecklist = () => {
     return (
         <>
-            <div className="header">Sunday Morning Checklist</div>
+            <div className="header">Security Sunday Checklist</div>
             <p>
                 The following is a list of activities that should be performed each Sunday by the Safety and Security
                 team member who is assigned for that day:
