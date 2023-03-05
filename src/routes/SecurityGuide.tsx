@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import './TeamGuide.css';
+import './SecurityGuide.css';
 
-export const TeamGuide = () => {
+export const SecurityGuide = () => {
     return (
         <>
-            <div className="header">Team Guide</div>
+            <div className="header">Security Team Guide</div>
 
             <div id="toc_container">
                 <h1>Contents</h1>
