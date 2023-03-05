@@ -16,46 +16,19 @@
 
 import React, {useState} from 'react';
 import './App.css';
-import {AppBar, Box, IconButton, Toolbar, Typography} from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import {Box} from "@mui/material";
 import {Outlet} from "react-router-dom";
 import {NavDrawer} from "../component/NavDrawer";
 import Nav from "../component/Nav";
+import Header from "../component/Header";
 
 function App() {
     const [mobileOpen, setMobileOpen] = useState(false)
 
     return (
         <Box sx={{display: 'flex'}}>
-            <AppBar position='fixed' sx={{zIndex: (theme) => theme.zIndex.drawer + 1}}>
-                <Toolbar>
-                    <IconButton color='inherit'
-                                edge='start'
-                                sx={{display: {xs: 'block', sm: 'block', md: 'none', lg: 'none'}}}
-                                onClick={() => setMobileOpen(!mobileOpen)}>
-                        <MenuIcon/>
-                    </IconButton>
-                    <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
-                    <Typography variant='h3' sx={{
-                        display: {xs: 'none', sm: 'none', md: 'block', lg: 'block'},
-                        ml: 2,
-                        fontFamily: 'Montserrat',
-                        color: 'white'
-                    }}>
-                        Redmond Christian Church
-                    </Typography>
-                    <Typography variant='body1' sx={{
-                        display: {xs: 'block', sm: 'block', md: 'none', lg: 'none'},
-                        ml: 2,
-                        fontFamily: 'Montserrat',
-                        color: 'white'
-                    }}>
-                        Redmond Christian Church
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <NavDrawer drawer={<Nav setMobileOpen={setMobileOpen}/>} isMobile={false} mobileOpen={undefined}/>
-            <NavDrawer drawer={<Nav setMobileOpen={setMobileOpen}/>} isMobile={true} mobileOpen={mobileOpen}/>
+            <Header mobileOpen={mobileOpen} setMobileOpen={setMobileOpen}/>
+            <NavDrawer mobileOpen={mobileOpen} drawer={<Nav setMobileOpen={setMobileOpen}/>}/>
             <Box sx={{mt: 10, ml: 3, mr: 3}}>
                 <Outlet/>
             </Box>

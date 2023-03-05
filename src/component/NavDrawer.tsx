@@ -14,21 +14,25 @@
  * limitations under the License.
  */
 
-import {Box, Drawer, Toolbar} from "@mui/material";
+import {Box, Drawer, Toolbar, useMediaQuery, useTheme} from "@mui/material";
 import React, {ReactNode} from "react";
 
 const drawerWidth = 240
 
-export const NavDrawer = (props: { drawer: ReactNode, isMobile: boolean, mobileOpen: boolean | undefined }) => {
-    const {drawer, isMobile, mobileOpen} = props
+export const NavDrawer = (props: { drawer: ReactNode, mobileOpen: boolean}) => {
+    const {drawer, mobileOpen} = props
+    const theme = useTheme()
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+
     const displayValue = isMobile
         ? {xs: 'block', sm: 'block', md: 'none', lg: 'none'}
         : {xs: 'none', sm: 'none', md: 'block', lg: 'block'}
+    const openFunction = isMobile ? mobileOpen : undefined;
     const drawerVariant = isMobile ? 'temporary' : 'permanent'
     return (
         <Box component='nav' sx={{display: displayValue}}>
             <Drawer variant={drawerVariant}
-                    open={mobileOpen}
+                    open={openFunction}
                     sx={{
                         width: drawerWidth,
                         flexShrink: 0,
