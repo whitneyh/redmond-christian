@@ -28,6 +28,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {CssBaseline} from "@mui/material";
+import AuthComplete from "./auth/AuthComplete";
 
 const router = createBrowserRouter([
     {
@@ -35,7 +36,8 @@ const router = createBrowserRouter([
         children: [
             {path: '/', element: <Welcome/>},
             {path: '/security/guide', element: <SecurityGuide/>},
-            {path: '/security/checklist', element: <SecurityChecklist/>}
+            {path: '/security/checklist', element: <SecurityChecklist/>},
+            {path: '/auth/complete', element: <AuthComplete/>}
         ]
     }
 ])

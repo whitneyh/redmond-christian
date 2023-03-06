@@ -50,6 +50,11 @@ const Header = (props: { mobileOpen: boolean, setMobileOpen: (value: boolean) =>
                 </IconButton>
                 <img src={process.env.PUBLIC_URL + '/RCC_Logo.webp'}/>
                 {title()}
+                <Box sx={{float: 'right'}}>
+                    <a href='https://api.planningcenteronline.com/oauth/authorize?client_id=55e7a5ddcab388c89a5b3d18776491547881f828d8a8f56d76d87e94f72792f6&redirect_uri=http://localhost:3000/auth/complete&response_type=code&scope=people'>
+                        login
+                    </a>
+                </Box>
             </Toolbar>
         </AppBar>
     )
