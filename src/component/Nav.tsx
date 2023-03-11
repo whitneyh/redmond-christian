@@ -15,7 +15,7 @@
  */
 
 import {Box, Divider, List, ListItem, ListItemIcon, ListItemText, Typography} from "@mui/material";
-import {Badge, CheckBox} from "@mui/icons-material";
+import {Badge, CheckBox, DoorFront} from "@mui/icons-material";
 import {NavLink} from "react-router-dom";
 import React from "react";
 
@@ -34,6 +34,7 @@ const Nav = (props: {setMobileOpen: React.Dispatch<React.SetStateAction<boolean>
                 {[
                     {name: 'Team Guide', icon: <Badge/>, route: '/security/guide'},
                     {name: 'Sunday Checklist', icon: <CheckBox/>, route: '/security/checklist'},
+                    {name: 'Evacuation', icon: <DoorFront/>, route: '/security/evacuation'},
                 ].map((item, index) => (
                     <NavLink to={item.route} onClick={() => setMobileOpen(false)}>
                         <ListItem key={index.toString()}>
