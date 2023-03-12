@@ -20,22 +20,26 @@ import './index.css';
 import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {TeamGuide} from "./routes/TeamGuide";
-import {SundayChecklist} from "./routes/SundayChecklist";
 import {Welcome} from "./routes/Welcome";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {CssBaseline} from "@mui/material";
+import Evacuation from "./routes/Evacuation";
+import HospitalityGuide from "./routes/HospitalityGuide";
+import SecurityGuide from "./routes/SecurityGuide";
+import SecurityChecklist from "./routes/SecurityChecklist";
 
 const router = createBrowserRouter([
     {
         path: '/', element: <App/>,
         children: [
             {path: '/', element: <Welcome/>},
-            {path: '/security/guide', element: <TeamGuide/>},
-            {path: '/security/checklist', element: <SundayChecklist/>}
+            {path: '/hospitality/guide', element: <HospitalityGuide/>},
+            {path: '/security/guide', element: <SecurityGuide/>},
+            {path: '/security/checklist', element: <SecurityChecklist/>},
+            {path: '/security/evacuation', element: <Evacuation/>},
         ]
     }
 ])
