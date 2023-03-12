@@ -101,7 +101,7 @@ const SecurityGuide = () => {
                 <h1 id="safety"> 3 Safety</h1>
                 <p>
                     One of the two core purposes of the team is to ensure that people are safe and feel comfortable
-                    when the attend church service on Sunday morning.
+                    when they attend church service on Sunday morning.
                 </p>
                 <h2 id="people-safety">3.1 People</h2>
                 <p>
@@ -129,9 +129,9 @@ const SecurityGuide = () => {
                 </p>
                 <p>
                     Once evacuated, people should be directed to a predetermined assembly spot outside the church so
-                    that a head count can be taken to ensure that everyone has safely exited the building. The iPad from
+                    that a headcount can be taken to ensure that everyone has safely exited the building. The iPad from
                     the Welcome Desk should be retrieved while exiting the building so that the attendance data on it
-                    can be used to perform an accurate head count.
+                    can be used to perform an accurate headcount.
                 </p>
                 <p>
                     911 should be called as soon as possible so that the fire department will be dispatched. This
@@ -172,7 +172,7 @@ const SecurityGuide = () => {
 
             <h1 id="security">4 Security</h1>
             <h2 id="people-security">4.1 People</h2>
-            <h3>4.1.1. Something Does Not Feel Right</h3>
+            <h3>4.1.1. Something Doesn't Feel Right</h3>
             <p>
                 The team member who is on duty should be aware of people or situations that don't feel right. In
                 such a case, the team member should evaluate the situation by talking with the person that seems out of
@@ -181,8 +181,8 @@ const SecurityGuide = () => {
             <h3>4.1.2 Anger/Threats</h3>
             <p>
                 If a person seems agitated or upset, every effort should be made to de-escalate the situation by
-                being kind and helpful. If you can be helpful in a situation, do so; however, if it things appear to be
-                turning dangerous, use your best judgement and call 911.
+                being kind and helpful. If you can be helpful in a situation, do so; however, if things appear to be
+                turning dangerous, use your best judgment and call 911.
             </p>
             <h3>4.1.3 Violence</h3>
             <p>
