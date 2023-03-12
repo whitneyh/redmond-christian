@@ -16,7 +16,7 @@
 
 import './SecurityGuide.css';
 
-export const SecurityGuide = () => {
+const SecurityGuide = () => {
     return (
         <>
             <div className="header">Security Team Guide</div>
@@ -276,3 +276,5 @@ export const SecurityGuide = () => {
         </>
     )
 }
+
+export default SecurityGuide

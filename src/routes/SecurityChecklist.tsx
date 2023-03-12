@@ -16,7 +16,7 @@
 
 import './SecurityChecklist.css';
 
-export const SecurityChecklist = () => {
+const SecurityChecklist = () => {
     return (
         <>
             <div className="header">Security Sunday Checklist</div>
@@ -72,3 +72,5 @@ export const SecurityChecklist = () => {
         </>
     )
 }
+
+export default SecurityChecklist

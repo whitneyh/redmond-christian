@@ -26,6 +26,18 @@ const Nav = (props: {setMobileOpen: React.Dispatch<React.SetStateAction<boolean>
             <Typography variant='h6' sx={{ml: 3, mt: 2, color: 'crimson'}}>
                 Hospitality
             </Typography>
+            <List>
+                {[
+                    {name: 'Team Guide', icon: <Badge/>, route: '/hospitality/guide'},
+                ].map((item, index) => (
+                    <NavLink to={item.route} onClick={() => setMobileOpen(false)}>
+                        <ListItem key={index.toString()}>
+                            <ListItemIcon>{item.icon}</ListItemIcon>
+                            <ListItemText primary={item.name}/>
+                        </ListItem>
+                    </NavLink>
+                ))}
+            </List>
             <Divider/>
             <Typography variant='h6' sx={{ml: 3, mt: 2, color: 'crimson'}}>
                 Security
