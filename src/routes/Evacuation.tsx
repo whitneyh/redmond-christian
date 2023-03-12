@@ -12,7 +12,7 @@ const Evacuation = () => {
             <p>
                 Once people have exited from the church building, they should gather in in the parking lot near <strong>
                 ninth street</strong> if that location is safe. The security team should use the data from the iPad to
-                do a head count to ensure that everyone has safely exited the building. Information should be provided
+                do a headcount to ensure that everyone has safely exited the building. Information should be provided
                 to first responders if there are people who have not safely exited the building.
             </p>
         </>
