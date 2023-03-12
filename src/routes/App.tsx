@@ -56,7 +56,7 @@ function App() {
             </AppBar>
             <NavDrawer drawer={<Nav setMobileOpen={setMobileOpen}/>} isMobile={false} mobileOpen={undefined}/>
             <NavDrawer drawer={<Nav setMobileOpen={setMobileOpen}/>} isMobile={true} mobileOpen={mobileOpen}/>
-            <Box sx={{mt: 10, ml: 3, mr: 3}}>
+            <Box sx={{mt: 10, ml: 3, mr: 3, width: '100%'}}>
                 <Outlet/>
             </Box>
         </Box>
