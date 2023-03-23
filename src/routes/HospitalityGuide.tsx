@@ -38,25 +38,43 @@ const HospitalityGuide = () => {
                     to the information desk if more in depth information is needed.
                 </p>
                 <p>
-                    Greeters should be at their assigned door between <strong>9:45 am</strong> and <strong>10:15 am</strong>.
+                    Greeters should be at their assigned door between <strong>15 minutes before the service starts (9:45
+                    am)</strong> and <strong>15 minutes after the service starts (10:15 am)</strong>.
                 </p>
                 <h2 id="usher">2.2 Usher</h2>
                 <p>
                     The responsibility of the usher is to help people find seats in the service. They should remain
-                    aware of where open seats are in the room and direct people to those seats. If the room becomes
-                    full, the usher can ask people to move together so that more open seating can be provided.
+                    aware of where open seats are in the room and direct people to those seats. When possible, people
+                    should be seated from the front of the sanctuary to the back and from the outside of a row to the
+                    inside. This is not a hard and fast rule. People may choose to sit where they would like; however,
+                    if the room becomes full, the usher can ask people to move together so that more open seating can be
+                    provided.
+                </p>
+                <p>
+                    Ushers should be available to help people between <strong>15 minutes before the service starts (9:45
+                    am)</strong> and <strong>15 minutes after the service starts (10:15 am)</strong>
                 </p>
                 <h2 id="communion">2.3 Communion Server</h2>
                 <p>
                     Four people are assigned to server communion each Sunday: two in the front and two in the back.
-                    Although the job primarily consists of holding a tray of elements so that people can take them,
-                    it is important to keep in mind that you are part of a holy moment. It is appropriate to be praying
-                    for people silently as you disburse the elements.
+                    Although the job primarily consists of serving the communion elements to people, it is important to
+                    keep in mind that you are part of a holy moment. It is appropriate to be praying for people silently
+                    or to pronounce a blessing on people as you disburse the elements.
+                </p>
+                <p>
+                    The communion servers should take their places at the beginning of communion and remain there
+                    until either they run out of elements or everyone is served. The servers at the back of the
+                    sanctuary should serve people in the family room who would like to participate in communion.
                 </p>
                 <h2 id="info-desk">2.4 Information Desk</h2>
                 <p>
                     The person assigned to the info desk requires training. Please let the team lead know if you are
                     interested in this role.
+                </p>
+                <p>
+                    The information desk person should be available to help people between <strong>15 minutes before the
+                    service starts (9:45 am)</strong> and <strong>15 minutes after the service starts (10:15
+                    am)</strong>
                 </p>
             </div>
         </>
