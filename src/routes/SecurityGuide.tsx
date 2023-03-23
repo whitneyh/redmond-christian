@@ -257,7 +257,7 @@ const SecurityGuide = () => {
             <p>
                 All members of the safety/security team should obtain training in first aid and CPR. There are a
                 variety of ways of receiving such training. The least expensive way to accomplish this is through the
-                Bend First Department. They offer CPA and "Stop the Bleed" for free on the first Wednesday of each
+                Bend Fire Department. They offer CPA and "Stop the Bleed" for free on the first Wednesday of each
                 month. Please see their
                 <a href="https://www.bendoregon.gov/government/departments/fire-rescue/community-resources-programs/community-training">
                     website
